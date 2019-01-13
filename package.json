@@ -1,0 +1,33 @@
+{
+  "name": "ts-koa-api",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/janirapo/ts-koa-api.git",
+  "author": "Jani Rapo <rapo.jani@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/http-status-codes": "^1.2.0",
+    "@types/koa": "^2.0.48",
+    "@types/koa-bodyparser": "^4.2.1",
+    "@types/koa-router": "^7.0.37",
+    "@types/node": "^10.12.18",
+    "http-status-codes": "^1.3.0",
+    "koa": "^2.6.2",
+    "koa-bodyparser": "^4.2.1",
+    "koa-router": "^7.4.0",
+    "nodemon": "^1.18.9",
+    "pg": "^7.8.0",
+    "reflect-metadata": "^0.1.12",
+    "ts-node": "^7.0.1",
+    "tslint": "^5.12.1",
+    "tslint-config-airbnb": "^5.11.1",
+    "typeorm": "^0.2.11",
+    "typescript": "^3.2.2"
+  },
+  "scripts": {
+    "lint": "tslint --project tsconfig.json --format stylish",
+    "build": "tsc",
+    "serve": "ts-node src/server.ts",
+    "start": "nodemon"
+  }
+}
