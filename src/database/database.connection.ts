@@ -12,7 +12,8 @@ const connectionOpts: ConnectionOptions = {
   database: process.env.DB_NAME || 'typescript-koa',
   entities: [
     `${parentDir}/**/*.entity.ts`,
-    // ${parentDir}/**/*.entity.js to entities //if running directly via Node.js, we need to add this
+    // if running directly via Node.js, we need to add this
+    // ${parentDir}/**/*.entity.js to entities
   ],
   synchronize: true,
 };
