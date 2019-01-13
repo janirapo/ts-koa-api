@@ -1,7 +1,8 @@
 import * as Koa from 'koa';
 import * as HttpStatus from 'http-status-codes';
-import movieController from '../movie/movie.controller';
 import * as bodyParser from 'koa-bodyparser';
+
+import movieController from '../movie/movie.controller';
 
 const app: Koa = new Koa();
 
@@ -18,7 +19,7 @@ app.use(async (ctx: Koa.Context, next: () => Promise<any>) => {
   }
 });
 
-// Body parser middleware
+// Middleware
 app.use(bodyParser());
 
 // Route middleware.
